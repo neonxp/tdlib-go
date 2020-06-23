@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang:1.14.4-alpine
 
 COPY --from=mihaildemidoff/tdlib /usr/local/include/td /usr/local/include/td
 COPY --from=mihaildemidoff/tdlib /usr/local/lib/libtd* /usr/local/lib/
